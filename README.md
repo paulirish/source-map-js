@@ -4,6 +4,10 @@
 
 [![NPM](https://nodei.co/npm/source-map.png?downloads=true&downloadRank=true)](https://www.npmjs.com/package/source-map)
 
+**Forked from `source-map` to apply performance patch to 0.6.1**
+
+See https://github.com/mozilla/source-map/issues/370
+
 This is a library to generate and consume the source map format
 [described here][format].
 
