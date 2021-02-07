@@ -1,10 +1,11 @@
 {
-  "name": "@benthemonkey/source-map",
+  "name": "source-map-js",
   "description": "Generates and consumes source maps",
-  "version": "0.6.3",
-  "homepage": "https://github.com/mozilla/source-map",
-  "author": "Nick Fitzgerald <nfitzgerald@mozilla.com>",
+  "version": "0.6.2",
+  "homepage": "https://github.com/7rulnik/source-map",
+  "author": "Valentin 7rulnik Semirulnik <v7rulnik@gmail.com>",
   "contributors": [
+    "Nick Fitzgerald <nfitzgerald@mozilla.com>",
     "Tobias Koppers <tobias.koppers@googlemail.com>",
     "Duncan Beevers <duncan@dweebd.com>",
     "Stephen Crane <scrane@mozilla.com>",
@@ -44,7 +45,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/mozilla/source-map.git"
+    "url": "http://github.com/7rulnik/source-map.git"
   },
   "main": "./source-map.js",
   "files": [
