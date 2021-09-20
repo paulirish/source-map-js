@@ -40,7 +40,7 @@ function benchmark(name, setup, action) {
 
   console.profileEnd(name);
 
-  return stats;
+  return stats.toString();
 }
 
 var EXPECTED_NUMBER_OF_MAPPINGS = 2350714;
