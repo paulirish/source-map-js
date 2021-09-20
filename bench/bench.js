@@ -72,3 +72,14 @@ function benchmarkParseSourceMap() {
     benchmarkBlackbox(smc._generatedMappings.length);
   });
 }
+
+function benchmarkParseSourceMapCDT() {
+  return benchmark("parse source map", noop, function () {
+    const tsm = new SDK.TextSourceMap(`compiled.js`, `compiled.js.map`, testSourceMap);
+    if (tsm.mappings().length !== EXPECTED_NUMBER_OF_MAPPINGS) {
+      throw new Error("Expected " + EXPECTED_NUMBER_OF_MAPPINGS + " mappings, found "
+                      + tsm.mappings().length);
+    }
+    benchmarkBlackbox(tsm.mappings().length);
+  });
+}

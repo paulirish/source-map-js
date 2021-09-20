@@ -13,11 +13,11 @@ if (typeof print !== "function") {
 
 load("./scalajs-runtime-sourcemap.js");
 load("./stats.js");
-load("../dist/source-map.js");
+// load("../dist/source-map.js");
+load("./cdtsm.js");
 load("./bench.js");
 
 print("Parsing source map");
-print(benchmarkParseSourceMap());
+// print(benchmarkParseSourceMap());
+print(benchmarkParseSourceMapCDT());
 print();
-print("Serializing source map");
-print(benchmarkSerializeSourceMap());
